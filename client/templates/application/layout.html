@@ -1,0 +1,12 @@
+<template name="layout">
+  <div class="container"> <!-- Bootstrap -->
+    <header class="navbar navbar-default jumbotron" role="navigation"> 
+      <div class="page-header">
+        <h3><a href="{{pathFor 'categoriesList'}}">Padmaloka Meditation</a></h3>
+      </div>
+    </header>
+    <div id="main">
+      {{> yield}}
+    </div>
+  </div>
+</template>

@@ -1,0 +1,25 @@
+<template name="playerPage">
+  <div class="playerPage">
+    <h2 class="title">
+      {{#if led}}
+        {{title}}
+      {{else}}
+        {{categoryName}} Bells only
+      {{/if}}
+    </h2>
+    
+    <div id="meditationPlayer">
+      {{#if led}}
+        {{filename}}
+      {{else}}
+        bells-only not implemented yet, aww!
+      {{/if}}
+    </div>
+    
+    duration: {{secondsToHoursMinutesAndSeconds duration}}
+    
+    <a class="player-{{playOrPause}}button">{{playOrPause}}</a>
+    
+    <a class="player-position">{{position}}:{{duration}}</a>
+  </div>
+</template>

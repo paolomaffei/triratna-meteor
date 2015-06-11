@@ -1,0 +1,10 @@
+<template name="categoryItem">
+  <div class="category-row row">
+    <div class="category-image col-xs-4">
+      <img src="/images/categories/{{_id}}.png" style="max-width:100%; display:block;" class="col-md-4 img-responsive">
+    </div>
+    <div class="category-title col-xs-8">
+      <h2><a href="{{pathFor 'meditationsList'}}">{{name}}</a></h2>
+    </div>
+  </div>
+</template>

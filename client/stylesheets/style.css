@@ -1,0 +1,9 @@
+/* CSS declarations go here */
+.category-row {
+  background-color: lightblue;
+  border: 1px solid;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 50px;
+  margin-bottom: 2px;
+}

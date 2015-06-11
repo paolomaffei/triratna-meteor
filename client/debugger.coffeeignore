@@ -1,0 +1,6 @@
+if Meteor.isCordova
+  console.log "is cordova", Meteor, this
+  #if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
+  #WebView.setWebContentsDebuggingEnabled true
+  #else
+  #  console.log "build version not >= of kitkat"

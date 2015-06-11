@@ -1,0 +1,16 @@
+<template name="meditationItem">
+  <div class="meditation-row row">
+    <div class="category-title col-xs-8">
+      <h4>
+        <a href="{{pathFor 'playerPage'}}">
+          {{#if led}}
+            {{title}}
+          {{else}}
+            {{categoryName}} Bells only
+          {{/if}}
+        </a>
+      </h4>
+    </div>
+    duration: {{secondsToHoursMinutesAndSeconds duration}}
+  </div>
+</template>

@@ -1,0 +1,8 @@
+<template name="meditationsList">
+  <h2> {{title}} meditations </h2>
+  <div class="meditations">
+    {{#each meditations}}
+      {{> meditationItem}}
+    {{/each}}
+  </div>
+</template>
